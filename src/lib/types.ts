@@ -1,5 +1,6 @@
 export type FuelEntry = {
-  id: string; filled_at: string; odometer_km: number | null; litres: number;
+  id: string; filled_at: string; odometer_km: number | null;
+  odometer_before_km: number | null; odometer_after_km: number | null; litres: number;
   price_per_litre: number; amount: number; station: string | null;
   receipt_number: string | null; density_kg_m3: number | null; range_km: number | null;
   notes: string | null; source: string | null; created_at?: string;
