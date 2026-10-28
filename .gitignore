@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+.env
+.env.local
+.env.*.local
+.vercel
+.netlify
+dist
+coverage
+.DS_Store
+*.log
