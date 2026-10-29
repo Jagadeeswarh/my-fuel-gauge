@@ -35,3 +35,12 @@
 @keyframes riseIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:740px){.hero-model .car-art{width:116%;max-width:none;transform:translateX(-1%)}.visual-caption{display:none}.visual-label{font-size:7px;max-width:58%}.sun-glint{right:0;width:52%}}
 @media(prefers-reduced-motion:reduce){.app-shell,.topbar,.hero-copy,.hero-visual,.kpi,.hero-model .car-art{animation:none!important}.chart-card,.panel,.journal-wrap,.button,.navlinks a:after{transition:none!important}}
+
+/* Studio-render hero: let the warm ivory artwork blend into the site canvas without a checker/grid panel. */
+.hero-model{height:auto;aspect-ratio:3/2;min-height:0;overflow:hidden;background:#FFFDF2;border-color:var(--cream)}
+.hero-model:before{background:none;opacity:0}
+.hero-model .car-art{display:block;width:100%;max-width:none;height:100%;object-fit:contain;filter:none;animation:carArrival 1.05s cubic-bezier(.2,.7,.2,1) both;transform-origin:center}
+.hero-model .sun-glint{opacity:.08}
+.hero-model .visual-index{background:rgba(255,253,242,.72)}
+.hero-model .visual-label,.hero-model .visual-caption{background:rgba(255,253,242,.7);padding:4px 6px}
+@media(max-width:740px){.hero-model{height:auto;aspect-ratio:3/2}.hero-model .car-art{width:100%;height:100%;max-width:none;transform:none}.hero-model .visual-label{max-width:none}}
