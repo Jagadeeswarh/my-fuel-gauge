@@ -94,3 +94,10 @@ th{background:var(--surface-strong);color:var(--panel-text);border-color:var(--l
 
 html[data-theme="signature"]{--panel-muted:#73716B}html[data-theme="oat-forest"]{--panel-muted:#626E65}html[data-theme="midnight"]{--panel-muted:#506579}html[data-theme="blush"]{--panel-muted:#6D6670}html[data-theme="sandstone"]{--panel-muted:#666E67}html[data-theme="alpine"]{--panel-muted:#647176}html[data-theme="warm-ivory"]{--panel-muted:#6F6259}html[data-theme="glacier"]{--panel-muted:#607383}
 .chart-card .chart-title p,.panel p{color:var(--panel-muted)}
+
+/* Keep foregrounds legible on secondary-colour cards and reserve the 10% accent for actions. */
+.kpi{background:var(--panel);color:var(--panel-text)}
+.kpi-label,.kpi-sub{color:var(--panel-muted)}
+.chart-card .chart-title h3,.panel h3{color:var(--panel-text)}
+.button:not(.secondary){background:var(--silver);color:var(--accent-contrast);border-color:var(--silver)}
+.chart-switch button.active{background:var(--silver);color:var(--accent-contrast)}
